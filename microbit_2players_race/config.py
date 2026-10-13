@@ -1,0 +1,28 @@
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent
+IMAGE_DIR = BASE_DIR / "images"
+AUDIO_DIR = BASE_DIR / "audio"
+
+SERIAL_BAUDRATE = 115200
+SERIAL_TIMEOUT_SECONDS = 0.1
+SERIAL_POLL_INTERVAL_MS = 20
+
+MAX_PLAYERS = 4
+RACE_DISTANCE = 1000
+DISTANCE_PER_STEP = 10
+COUNTDOWN_SECONDS = 3
+MAX_STEPS_PER_MESSAGE = 1000
+
+COMPUTER_PLAYER_ID = "Computer"
+COMPUTER_TICK_MS = 200
+COMPUTER_STEPS_MIN = 0
+COMPUTER_STEPS_MAX = 4
+
+SPRITE_PATHS = {
+    "image 1": IMAGE_DIR / "run1.png",
+    "image 2": IMAGE_DIR / "run2.gif",
+    "image 3": IMAGE_DIR / "run3.png",
+    "image 4": IMAGE_DIR / "run4.png",
+}
